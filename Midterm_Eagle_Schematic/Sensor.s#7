@@ -5365,17 +5365,19 @@ Source: &lt;a href="https://media.digikey.com/pdf/Data Sheets/Photonic Detetecto
 <junction x="149.86" y="109.22"/>
 <label x="147.32" y="104.14" size="1.778" layer="95"/>
 </segment>
+</net>
+<net name="N$2" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="E"/>
 <wire x1="111.506" y1="101.854" x2="106.68" y2="101.854" width="0.1524" layer="91"/>
 <wire x1="106.68" y1="101.854" x2="106.68" y2="96.52" width="0.1524" layer="91"/>
-<label x="104.14" y="93.98" size="1.778" layer="95"/>
 </segment>
+</net>
+<net name="N$3" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="CATH"/>
 <wire x1="126.746" y1="101.854" x2="129.54" y2="101.854" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="101.854" x2="129.54" y2="96.52" width="0.1524" layer="91"/>
-<label x="127" y="93.98" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
