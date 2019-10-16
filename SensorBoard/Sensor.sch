@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.0">
+<eagle version="9.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -5218,7 +5218,7 @@ Source: &lt;a href="https://media.digikey.com/pdf/Data Sheets/Photonic Detetecto
 </classes>
 <parts>
 <part name="FRAME2" library="SparkFun" deviceset="FRAME-LETTER" device=""/>
-<part name="R3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="10k"/>
+<part name="R3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="10k"/>
 <part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="P+5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="P+4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
@@ -5226,9 +5226,10 @@ Source: &lt;a href="https://media.digikey.com/pdf/Data Sheets/Photonic Detetecto
 <part name="U1" library="PDV-P9007" deviceset="PDV-P9007" device=""/>
 <part name="U2" library="TMP36" deviceset="TMP36" device="GT9"/>
 <part name="U3" library="TCRT5000" deviceset="TCRT5000" device=""/>
-<part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="220"/>
+<part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="220"/>
 <part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
+<part name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="1M"/>
 </parts>
 <sheets>
 <sheet>
@@ -5249,18 +5250,18 @@ Source: &lt;a href="https://media.digikey.com/pdf/Data Sheets/Photonic Detetecto
 <attribute name="VALUE" x="138.684" y="103.886" size="1.778" layer="96"/>
 </instance>
 <instance part="P+5" gate="VCC" x="106.68" y="137.16" smashed="yes" rot="R180">
-<attribute name="VALUE" x="101.854" y="135.128" size="1.778" layer="96"/>
+<attribute name="VALUE" x="104.394" y="135.128" size="1.778" layer="96"/>
 </instance>
-<instance part="P+4" gate="VCC" x="93.98" y="124.46" smashed="yes" rot="R180">
-<attribute name="VALUE" x="87.63" y="127.254" size="1.778" layer="96"/>
+<instance part="P+4" gate="VCC" x="83.82" y="124.46" smashed="yes" rot="R180">
+<attribute name="VALUE" x="77.47" y="127.254" size="1.778" layer="96"/>
 </instance>
 <instance part="JP1" gate="A" x="121.92" y="149.86" smashed="yes" rot="R90">
 <attribute name="NAME" x="113.665" y="143.51" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="132.08" y="143.51" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="U1" gate="G$1" x="93.98" y="129.54" smashed="yes">
-<attribute name="NAME" x="109.728" y="128.016" size="1.778" layer="95" align="center-left"/>
-<attribute name="VALUE" x="98.298" y="125.476" size="1.778" layer="96" align="center-left"/>
+<instance part="U1" gate="G$1" x="83.82" y="129.54" smashed="yes">
+<attribute name="NAME" x="99.568" y="128.016" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="88.138" y="125.476" size="1.778" layer="96" align="center-left"/>
 </instance>
 <instance part="U2" gate="G$1" x="147.32" y="116.84" smashed="yes" rot="R90">
 <attribute name="NAME" x="141.486609375" y="117.33851875" size="1.78101875" layer="95" rot="R180"/>
@@ -5279,6 +5280,10 @@ Source: &lt;a href="https://media.digikey.com/pdf/Data Sheets/Photonic Detetecto
 </instance>
 <instance part="P+3" gate="VCC" x="129.54" y="121.92" smashed="yes">
 <attribute name="VALUE" x="134.366" y="123.952" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="R2" gate="G$1" x="109.22" y="121.92" smashed="yes" rot="R90">
+<attribute name="NAME" x="114.3" y="125.7554" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="107.442" y="125.73" size="1.778" layer="96" rot="R180"/>
 </instance>
 </instances>
 <busses>
@@ -5299,7 +5304,7 @@ Source: &lt;a href="https://media.digikey.com/pdf/Data Sheets/Photonic Detetecto
 <wire x1="116.84" y1="142.24" x2="116.84" y2="147.32" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="93.98" y1="129.54" x2="93.98" y2="127" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="129.54" x2="83.82" y2="127" width="0.1524" layer="91"/>
 <pinref part="P+4" gate="VCC" pin="VCC"/>
 <pinref part="U1" gate="G$1" pin="1"/>
 </segment>
@@ -5339,10 +5344,14 @@ Source: &lt;a href="https://media.digikey.com/pdf/Data Sheets/Photonic Detetecto
 </net>
 <net name="LDR" class="0">
 <segment>
-<wire x1="114.3" y1="129.54" x2="119.38" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="129.54" x2="109.22" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="129.54" x2="119.38" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="129.54" x2="119.38" y2="147.32" width="0.1524" layer="91"/>
 <pinref part="JP1" gate="A" pin="2"/>
 <pinref part="U1" gate="G$1" pin="2"/>
+<wire x1="109.22" y1="129.54" x2="109.22" y2="127" width="0.1524" layer="91"/>
+<junction x="109.22" y="129.54"/>
+<pinref part="R2" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -5376,6 +5385,11 @@ Source: &lt;a href="https://media.digikey.com/pdf/Data Sheets/Photonic Detetecto
 <wire x1="126.746" y1="101.854" x2="129.54" y2="101.854" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="101.854" x2="129.54" y2="96.52" width="0.1524" layer="91"/>
 <label x="127" y="93.98" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="R2" gate="G$1" pin="1"/>
+<wire x1="109.22" y1="116.84" x2="109.22" y2="114.3" width="0.1524" layer="91"/>
+<label x="106.68" y="111.76" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
